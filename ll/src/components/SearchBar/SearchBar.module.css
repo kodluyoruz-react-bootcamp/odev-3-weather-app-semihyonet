@@ -1,0 +1,9 @@
+.container {
+	display: flex;
+
+	bottom: 0;
+	text-align: center;
+}
+.searchbar {
+	background-color: black;
+}

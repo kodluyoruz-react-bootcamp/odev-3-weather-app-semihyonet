@@ -1,0 +1,7 @@
+.todayWeather {
+	background: linear-gradient(rgba(255, 255, 255, 0) 20%, rgb(97, 52, 52));
+	display: flex;
+	align-items: center;
+	justify-items: center;
+	justify-content: center;
+}

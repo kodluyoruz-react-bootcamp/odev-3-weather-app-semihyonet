@@ -1,31 +1,36 @@
+import WeatherPlaceHolder from "../../Assets/placeholder.json";
 import axios from "axios";
 import { createContext, useState, useEffect } from "react";
 var NodeGeocoder = require("node-geocoder");
 const WeatherContext = createContext(null);
 
-const defaultTheme = localStorage.getItem("defaultTheme");
 let options = {
 	provider: "google",
 	httpAdapter: "https", // Default
-	apiKey: process.env.REACT_APP_GOOGLE_KEY, // for Mapquest, OpenCage, Google Premier
+	apiKey: "AIzaSyC7Z_oIrzCNj3_JaS7wNmdHlQVi1NXKiLc", // for Mapquest, OpenCage, Google Premier
 	formatter: "json", // 'gpx', 'string', ...
 };
 export const WeatherProvider = ({ children }) => {
 	const [geocodeReverse, setGeocodeReverse] = useState({});
 	const [selectedCity, setCity] = useState({});
-	const [weather, setWeather] = useState({});
+	const [selectedCoords, setCoords] = useState({});
+	const [weather, setWeather] = useState(WeatherPlaceHolder);
 
 	const getWeather = async (lat, lon) => {
-		// let weatherData = await axios.get(
-		// 	`api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${process.env.REACT_APP_WEATHER_KEY}`
-		// );
-		// setWeather(weatherData);
+		let weatherData = await axios.get(
+			`https://api.openweathermap.org/data/2.5/onecall?exclude=hourly,minutely,alerts&appid=${process.env.REACT_APP_WEATHER_KEY}&lat=${lat}&lon=${lon}`
+		);
+		setWeather(weatherData);
 	};
 
 	useEffect(() => {
 		let geocoder = NodeGeocoder(options);
 		navigator.geolocation.getCurrentPosition(
 			(position) => {
+				setCoords({
+					lat: position.coords.latitude,
+					lon: position.coords.longitude,
+				});
 				geocoder.reverse(
 					{
 						lat: position.coords.latitude,
@@ -34,12 +39,8 @@ export const WeatherProvider = ({ children }) => {
 					(err, res) => {
 						if (!res) console.log(err);
 						else {
-							console.log(position.coords);
-							setGeocodeReverse(res);
-							getWeather(
-								position.coords.latitude,
-								position.coords.longitude
-							);
+							setGeocodeReverse(res[0]);
+							setCity(res[0].administrativeLevels.level1long);
 						}
 					}
 				);
@@ -52,8 +53,15 @@ export const WeatherProvider = ({ children }) => {
 		);
 	}, []);
 
+	useEffect(() => {
+		getWeather(selectedCoords.lat, selectedCoords.lon);
+	}, [selectedCoords]);
+
 	const values = {
-		weather,
+		selectedCity,
+		setCity,
+		setCoords,
+		weather: weather.data,
 		geocodeReverse,
 	};
 

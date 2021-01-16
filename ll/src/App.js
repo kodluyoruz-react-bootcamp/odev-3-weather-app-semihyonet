@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import WeatherScreen from "./Screens/WeatherScreen";
 import { WeatherProvider } from "./components/Context/weatherContext";
 import "./App.css";
@@ -6,12 +6,14 @@ import "./App.css";
 import Header from "./components/Header/Header";
 function App() {
 	return (
-		<WeatherProvider>
-			<Header />
-			<div className="App">
-				<WeatherScreen />
-			</div>
-		</WeatherProvider>
+		<>
+			<WeatherProvider>
+				<Header />
+				<div className="App">
+					<WeatherScreen />
+				</div>
+			</WeatherProvider>
+		</>
 	);
 }
 

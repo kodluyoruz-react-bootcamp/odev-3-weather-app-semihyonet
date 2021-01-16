@@ -1,0 +1,315 @@
+{
+	"lat": 38.783,
+	"lon": 28.6848,
+	"timezone": "Europe/Istanbul",
+	"timezone_offset": 10800,
+	"current": {
+		"dt": 1610742744,
+		"sunrise": 1610688115,
+		"sunset": 1610723220,
+		"temp": 272.61,
+		"feels_like": 268.88,
+		"pressure": 1015,
+		"humidity": 92,
+		"dew_point": 271.61,
+		"uvi": 0,
+		"clouds": 7,
+		"visibility": 10000,
+		"wind_speed": 2.16,
+		"wind_deg": 43,
+		"weather": [
+			{
+				"id": 800,
+				"main": "Clear",
+				"description": "clear sky",
+				"icon": "01n"
+			}
+		]
+	},
+	"daily": [
+		{
+			"dt": 1610704800,
+			"sunrise": 1610688115,
+			"sunset": 1610723220,
+			"temp": {
+				"day": 275.9,
+				"min": 272.61,
+				"max": 276.78,
+				"night": 272.61,
+				"eve": 274.91,
+				"morn": 275.06
+			},
+			"feels_like": {
+				"day": 272.21,
+				"night": 268.88,
+				"eve": 272.13,
+				"morn": 272.2
+			},
+			"pressure": 1014,
+			"humidity": 81,
+			"dew_point": 273.02,
+			"wind_speed": 2.4,
+			"wind_deg": 296,
+			"weather": [
+				{
+					"id": 616,
+					"main": "Snow",
+					"description": "rain and snow",
+					"icon": "13d"
+				}
+			],
+			"clouds": 96,
+			"pop": 0.99,
+			"rain": 1.79,
+			"snow": 3.43,
+			"uvi": 2.16
+		},
+		{
+			"dt": 1610791200,
+			"sunrise": 1610774493,
+			"sunset": 1610809684,
+			"temp": {
+				"day": 278.9,
+				"min": 272.6,
+				"max": 279.17,
+				"night": 274.44,
+				"eve": 276.42,
+				"morn": 272.9
+			},
+			"feels_like": {
+				"day": 275.74,
+				"night": 270.33,
+				"eve": 273.1,
+				"morn": 269.93
+			},
+			"pressure": 1008,
+			"humidity": 66,
+			"dew_point": 272.95,
+			"wind_speed": 1.65,
+			"wind_deg": 113,
+			"weather": [
+				{
+					"id": 616,
+					"main": "Snow",
+					"description": "rain and snow",
+					"icon": "13d"
+				}
+			],
+			"clouds": 97,
+			"pop": 1,
+			"rain": 8.57,
+			"snow": 0.57,
+			"uvi": 1.7
+		},
+		{
+			"dt": 1610877600,
+			"sunrise": 1610860869,
+			"sunset": 1610896149,
+			"temp": {
+				"day": 273.94,
+				"min": 270.35,
+				"max": 275.19,
+				"night": 270.37,
+				"eve": 271.65,
+				"morn": 270.92
+			},
+			"feels_like": {
+				"day": 270.1,
+				"night": 267.16,
+				"eve": 267.94,
+				"morn": 266.68
+			},
+			"pressure": 1014,
+			"humidity": 86,
+			"dew_point": 268.61,
+			"wind_speed": 2.39,
+			"wind_deg": 283,
+			"weather": [
+				{
+					"id": 802,
+					"main": "Clouds",
+					"description": "scattered clouds",
+					"icon": "03d"
+				}
+			],
+			"clouds": 47,
+			"pop": 0.8,
+			"uvi": 2.06
+		},
+		{
+			"dt": 1610964000,
+			"sunrise": 1610947243,
+			"sunset": 1610982615,
+			"temp": {
+				"day": 272.98,
+				"min": 269.63,
+				"max": 273.59,
+				"night": 269.63,
+				"eve": 272.12,
+				"morn": 269.92
+			},
+			"feels_like": {
+				"day": 269.84,
+				"night": 264.89,
+				"eve": 268.78,
+				"morn": 266.85
+			},
+			"pressure": 1021,
+			"humidity": 84,
+			"dew_point": 264.48,
+			"wind_speed": 1.16,
+			"wind_deg": 44,
+			"weather": [
+				{
+					"id": 804,
+					"main": "Clouds",
+					"description": "overcast clouds",
+					"icon": "04d"
+				}
+			],
+			"clouds": 95,
+			"pop": 0.03,
+			"uvi": 1.76
+		},
+		{
+			"dt": 1611050400,
+			"sunrise": 1611033615,
+			"sunset": 1611069081,
+			"temp": {
+				"day": 271.16,
+				"min": 267.33,
+				"max": 273.33,
+				"night": 268.92,
+				"eve": 270.49,
+				"morn": 267.47
+			},
+			"feels_like": {
+				"day": 267.42,
+				"night": 264.93,
+				"eve": 266.63,
+				"morn": 263.14
+			},
+			"pressure": 1024,
+			"humidity": 71,
+			"dew_point": 256.53,
+			"wind_speed": 1.39,
+			"wind_deg": 37,
+			"weather": [
+				{
+					"id": 800,
+					"main": "Clear",
+					"description": "clear sky",
+					"icon": "01d"
+				}
+			],
+			"clouds": 0,
+			"pop": 0,
+			"uvi": 2.07
+		},
+		{
+			"dt": 1611136800,
+			"sunrise": 1611119985,
+			"sunset": 1611155547,
+			"temp": {
+				"day": 272.1,
+				"min": 267.89,
+				"max": 274.56,
+				"night": 270.5,
+				"eve": 271.21,
+				"morn": 267.89
+			},
+			"feels_like": {
+				"day": 268.89,
+				"night": 266.66,
+				"eve": 268.16,
+				"morn": 264
+			},
+			"pressure": 1032,
+			"humidity": 76,
+			"dew_point": 259.65,
+			"wind_speed": 0.9,
+			"wind_deg": 46,
+			"weather": [
+				{
+					"id": 800,
+					"main": "Clear",
+					"description": "clear sky",
+					"icon": "01d"
+				}
+			],
+			"clouds": 0,
+			"pop": 0,
+			"uvi": 1.9
+		},
+		{
+			"dt": 1611223200,
+			"sunrise": 1611206353,
+			"sunset": 1611242015,
+			"temp": {
+				"day": 276.89,
+				"min": 270.54,
+				"max": 279.41,
+				"night": 272.67,
+				"eve": 273.94,
+				"morn": 270.81
+			},
+			"feels_like": {
+				"day": 272.88,
+				"night": 269.69,
+				"eve": 271.17,
+				"morn": 266.58
+			},
+			"pressure": 1031,
+			"humidity": 59,
+			"dew_point": 260.85,
+			"wind_speed": 2.24,
+			"wind_deg": 102,
+			"weather": [
+				{
+					"id": 800,
+					"main": "Clear",
+					"description": "clear sky",
+					"icon": "01d"
+				}
+			],
+			"clouds": 6,
+			"pop": 0,
+			"uvi": 2
+		},
+		{
+			"dt": 1611309600,
+			"sunrise": 1611292719,
+			"sunset": 1611328482,
+			"temp": {
+				"day": 279.33,
+				"min": 272.24,
+				"max": 281.15,
+				"night": 274.97,
+				"eve": 276.05,
+				"morn": 272.24
+			},
+			"feels_like": {
+				"day": 276.03,
+				"night": 271.85,
+				"eve": 273.33,
+				"morn": 269.08
+			},
+			"pressure": 1027,
+			"humidity": 54,
+			"dew_point": 264.2,
+			"wind_speed": 1.41,
+			"wind_deg": 106,
+			"weather": [
+				{
+					"id": 800,
+					"main": "Clear",
+					"description": "clear sky",
+					"icon": "01d"
+				}
+			],
+			"clouds": 2,
+			"pop": 0,
+			"uvi": 2
+		}
+	]
+}

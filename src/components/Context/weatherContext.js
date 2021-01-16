@@ -12,7 +12,7 @@ let options = {
 };
 export const WeatherProvider = ({ children }) => {
 	const [geocodeReverse, setGeocodeReverse] = useState({});
-	const [selectedCity, setCity] = useState({});
+	const [selectedCity, setCity] = useState("");
 	const [selectedCoords, setCoords] = useState({});
 	const [weather, setWeather] = useState(WeatherPlaceHolder);
 
@@ -20,7 +20,9 @@ export const WeatherProvider = ({ children }) => {
 		let weatherData = await axios.get(
 			`https://api.openweathermap.org/data/2.5/onecall?exclude=hourly,minutely,alerts&appid=${process.env.REACT_APP_WEATHER_KEY}&lat=${lat}&lon=${lon}`
 		);
-		setWeather(weatherData);
+		console.log(WeatherPlaceHolder);
+
+		if (weatherData) setWeather(weatherData.data);
 	};
 
 	useEffect(() => {
@@ -61,7 +63,7 @@ export const WeatherProvider = ({ children }) => {
 		selectedCity,
 		setCity,
 		setCoords,
-		weather: weather.data,
+		weather: weather,
 		geocodeReverse,
 	};
 

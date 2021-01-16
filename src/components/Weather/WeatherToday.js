@@ -4,7 +4,7 @@ import FeatherIcon from "../Context/FeatherIcon";
 const WeatherToday = () => {
 	const { weather, selectedCity } = useContext(WeatherContext);
 
-	if (weather)
+	if (weather) {
 		return (
 			<div>
 				<h1>{FeatherIcon(weather.current.weather[0].id, false, 50)}</h1>
@@ -23,7 +23,7 @@ const WeatherToday = () => {
 				</h2>
 			</div>
 		);
-	else return <></>;
+	} else return <>Loading...</>;
 };
 
 export default WeatherToday;

@@ -22,6 +22,15 @@ const WeatherScreen = () => {
 					</Col>
 				</Container>
 			</Row>
+			<Row
+				style={{
+					alignItems: "center",
+					display: "flex",
+					justifyContent: "center",
+				}}
+			>
+				Made by Semih Yönet
+			</Row>
 		</>
 	);
 };

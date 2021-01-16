@@ -28,7 +28,7 @@ const WeatherCard = ({ data }) => {
 			</Card>
 		);
 	else {
-		return null;
+		return <>Loading</>;
 	}
 };
 

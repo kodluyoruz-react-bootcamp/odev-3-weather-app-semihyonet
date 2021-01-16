@@ -14,11 +14,11 @@ const CardMap = () => {
 					? weather.daily.map((a, i) => {
 							if (i < 6)
 								return (
-									<Col key={i} sm={4} lg={2}>
+									<Col key={`${i}`} sm={4} lg={2}>
 										<Card data={a} />
 									</Col>
 								);
-							else return null;
+							else return <></>;
 					  })
 					: null}
 			</Row>
